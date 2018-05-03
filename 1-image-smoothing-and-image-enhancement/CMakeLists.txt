@@ -9,8 +9,8 @@ SET(CMAKE_BUILD_TYPE RELEASE)
 FIND_PACKAGE(OpenCV REQUIRED)
 INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS})
 
-ADD_EXECUTABLE(image-enhacement ./src/image-enhacement.cpp)
-ADD_EXECUTABLE(image-smoothing  ./src/image-smoothing.cpp)
+ADD_EXECUTABLE(image-enhacement ./src/image_enhacement.cpp)
+ADD_EXECUTABLE(image-smoothing  ./src/image_smoothing.cpp)
 
 TARGET_LINK_LIBRARIES(image-enhacement ${OpenCV_LIBS})
 TARGET_LINK_LIBRARIES(image-smoothing ${OpenCV_LIBS})

@@ -1,1 +1,1 @@
-# Experiment-1 image-smoothing-and-image-enhancement
+# Experiment 1 image_smoothing_and_image_enhancement
