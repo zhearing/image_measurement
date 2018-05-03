@@ -51,6 +51,9 @@ void sort(int *src, int len)
 int main(int argc, char** argv)
 {
 	Mat image = imread("../images/lena.bmp", -1);
+//    previous picture is like a grayscale picture but not a grayscale picture
+//    Mat mat = imread("../images/lena.bmp", IMREAD_GRAYSCALE);
+//    imwrite("../output/gray_image.bmp", mat);
 	Mat ave_image = imread("../images/lena.bmp", -1);
 	Mat mid_image = imread("../images/lena.bmp", -1);
 	Mat max_image = imread("../images/lena.bmp", -1);
