@@ -7,8 +7,8 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	Mat image = imread("../output/image_binary.bmp", -1);
-	Mat image_refine = imread("../output/image_binary.bmp", -1);
+	Mat image = imread("../../3-image-thresholding-and-image-refinement/output/image_binary.bmp", -1);
+	Mat image_refine = imread("../../3-image-thresholding-and-image-refinement/output/image_binary.bmp", -1);
 	
 	for (int i = 0; i < image.rows; i++)
 		for (int j = 0; j < image.cols; j++)
@@ -70,7 +70,7 @@ int main(int argc, char** argv)
 		}
 	namedWindow("image_refine", WINDOW_AUTOSIZE);
 	imshow("image_refine", image_refine);
-	imwrite("../output/image_refine.bmp", image_refine);
+	imwrite("../../3-image-thresholding-and-image-refinement/output/image_refine.bmp", image_refine);
 	waitKey(0);
 	return 0;
 }

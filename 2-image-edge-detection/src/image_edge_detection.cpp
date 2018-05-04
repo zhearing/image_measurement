@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	Mat image = imread("../images/mid_image_enhancement.bmp", -1);
+	Mat image = imread("../../2-image-edge-detection/images/mid_image_enhancement.bmp", -1);
 	Mat priwitt, smoothed;
 	image.copyTo(priwitt);
 	image.copyTo(smoothed);
@@ -41,10 +41,10 @@ int main(int argc, char** argv)
 
 	namedWindow("priwitt", WINDOW_AUTOSIZE);
 	imshow("priwitt", priwitt);
-	imwrite("../output/priwitt.bmp", priwitt);
+	imwrite("../../2-image-edge-detection/output/priwitt.bmp", priwitt);
 	namedWindow("smoothed", WINDOW_AUTOSIZE);
 	imshow("smoothed", smoothed);
-	imwrite("../output/smoothed.bmp", smoothed);
+	imwrite("../../2-image-edge-detection/output/smoothed.bmp", smoothed);
 	waitKey(0);
 	return 0;
 }

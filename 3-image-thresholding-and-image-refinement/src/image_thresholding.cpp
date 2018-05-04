@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	Mat image = imread("../images/smoothed.bmp", -1);
+	Mat image = imread("../../3-image-thresholding-and-image-refinement/images/smoothed.bmp", -1);
 	int s1[image.rows][image.cols];
 	for (int m = 1; m < image.rows - 1; m++)
 	{
@@ -77,7 +77,7 @@ int main(int argc, char** argv)
 		}
 	}
 	int Y = (Y2 - Y1) / 2;
-	Mat image_binary = imread("../images/smoothed.bmp", -1);
+	Mat image_binary = imread("../../3-image-thresholding-and-image-refinement/images/smoothed.bmp", -1);
 	for (int m = 0; m < image_binary.rows; m++)
 		for (int n = 0; n < image_binary.cols; n++)
 		{
@@ -89,7 +89,7 @@ int main(int argc, char** argv)
 		}
 	namedWindow("image_binary", WINDOW_AUTOSIZE);
 	imshow("image_binary", image_binary);
-	imwrite("../output/image_binary.bmp", image_binary);
+	imwrite("../../3-image-thresholding-and-image-refinement/output/image_binary.bmp", image_binary);
 	waitKey(0);
 	return 0;
 }

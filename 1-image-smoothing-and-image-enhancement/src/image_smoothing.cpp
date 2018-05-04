@@ -50,14 +50,14 @@ void sort(int *src, int len)
 
 int main(int argc, char** argv)
 {
-	Mat image = imread("../images/lena.bmp", -1);
+	Mat image = imread("../../1-image-smoothing-and-image-enhancement/images/lena.bmp", -1);
 //    previous picture is like a grayscale picture but not a grayscale picture
 //    Mat mat = imread("../images/lena.bmp", IMREAD_GRAYSCALE);
 //    imwrite("../output/gray_image.bmp", mat);
-	Mat ave_image = imread("../images/lena.bmp", -1);
-	Mat mid_image = imread("../images/lena.bmp", -1);
-	Mat max_image = imread("../images/lena.bmp", -1);
-	Mat min_image = imread("../images/lena.bmp", -1);
+	Mat ave_image = imread("../../1-image-smoothing-and-image-enhancement/images/lena.bmp", -1);
+	Mat mid_image = imread("../../1-image-smoothing-and-image-enhancement/images/lena.bmp", -1);
+	Mat max_image = imread("../../1-image-smoothing-and-image-enhancement/images/lena.bmp", -1);
+	Mat min_image = imread("../../1-image-smoothing-and-image-enhancement/images/lena.bmp", -1);
 
 	for (int i = 1; i < image.rows - 1; i++)
 		for (int j = 1; j < image.cols - 1; j++)
@@ -82,16 +82,16 @@ int main(int argc, char** argv)
 	imshow("origin", image);
 	namedWindow("ave_image", WINDOW_AUTOSIZE);
 	imshow("ave_image", ave_image);
-	imwrite("../output/ave_image.bmp", ave_image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/ave_image.bmp", ave_image);
 	namedWindow("mid_image", WINDOW_AUTOSIZE);
 	imshow("mid_image", mid_image);
-	imwrite("../output/mid_image.bmp", mid_image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/mid_image.bmp", mid_image);
 	namedWindow("max_image", WINDOW_AUTOSIZE);
 	imshow("max_image", max_image);
-	imwrite("../output/max_image.bmp", max_image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/max_image.bmp", max_image);
 	namedWindow("min_image", WINDOW_AUTOSIZE);
 	imshow("min_image", min_image);
-	imwrite("../output/min_image.bmp", min_image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/min_image.bmp", min_image);
 
 
 	Saltapepper(image, 5000);
@@ -116,19 +116,19 @@ int main(int argc, char** argv)
 		}
 	namedWindow("salt_image");
 	imshow("salt_image", image);
-	imwrite("../output/salt_image.bmp", image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/salt_image.bmp", image);
 	namedWindow("salt_ave_image", WINDOW_AUTOSIZE);
 	imshow("salt_ave_image", ave_image);
-	imwrite("../output/salt_ave_image.bmp", ave_image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/salt_ave_image.bmp", ave_image);
 	namedWindow("salt_mid_image", WINDOW_AUTOSIZE);
 	imshow("salt_mid_image", mid_image);
-	imwrite("../output/salt_mid_image.bmp", mid_image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/salt_mid_image.bmp", mid_image);
 	namedWindow("salt_max_image", WINDOW_AUTOSIZE);
 	imshow("salt_max_image", max_image);
-	imwrite("../output/salt_max_image.bmp", max_image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/salt_max_image.bmp", max_image);
 	namedWindow("salt_min_image", WINDOW_AUTOSIZE);
 	imshow("salt_min_image", min_image);
-	imwrite("../output/salt_min_image.bmp", min_image);
+	imwrite("../../1-image-smoothing-and-image-enhancement/output/salt_min_image.bmp", min_image);
 	waitKey(0);
 	return 0;
 }
