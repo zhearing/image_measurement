@@ -1,14 +1,17 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
-
+//#include<opencv2/imgproc/imgproc.hpp>
 using namespace cv;
 using namespace std;
 
 int main(int argc, char** argv)
 {
 	Mat image = imread("../../4-area-measuring/images/origin.bmp", -1);
-	//cout << "origin rows: " << image.rows << "origin cols: " << image.cols << endl;
+//    cvtColor(image,image,CV_BGR2GRAY);
+//    threshold(image,image,145,255,THRESH_BINARY);
+//    imwrite("../../4-area-measuring/output/origin.bmp", image);
+//    cout << "origin rows: " << image.rows << "origin cols: " << image.cols << endl;
 	Mat L = imread("../../4-area-measuring/images/origin.bmp", -1);
 	for (int i = 0; i < L.rows - 1; i++)
 		for (int j = 0; j < L.cols - 1; j++)
@@ -83,10 +86,10 @@ int main(int argc, char** argv)
 					T[nl] = nl;
 					L.at<uchar>(i, j) = nl;
 					continue;
-				case 1://���裨3-2��
+				case 1:
 					L.at<uchar>(i, j) = L2[0];
 					continue;
-				case 2://���裨3-2��
+				case 2:
 					L.at<uchar>(i, j) = L2[0];
 					for (int k = 2; k < nl + 1; k++)
 					{
@@ -163,7 +166,7 @@ int main(int argc, char** argv)
 	}
 	for (int k1 = 0; k1 < n0 + 1; k1++)
 	{
-		cout << "area" << k1 << " " << area[k1];
+		cout << "area" << k1 << " " << area[k1] << "\n\r";
 	}
 	waitKey(0);
 	return 0;

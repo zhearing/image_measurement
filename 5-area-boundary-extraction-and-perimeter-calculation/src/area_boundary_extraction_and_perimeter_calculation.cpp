@@ -35,22 +35,22 @@ int main(int argc, char** argv)
 			if ((f[8] != f[6]) || (f[8] != f[2]) || (f[8] != f[4]) || (f[8] != f[0]) || (f[8] != f[3]) || (f[8] != f[1]) || (f[8] != f[5]) || (f[8] != f[7]))
 				L2.at<uchar>(i, j) = 255;
 		}
-	imshow("origin", image);
+    int Perimeter1 = 0;
+    int Perimeter2 = 0;
+    for (int i = 0; i < L1.rows - 1; i++)
+        for (int j = 0; j < L1.cols - 1; j++)
+        {
+            if (L1.at<uchar>(i, j) == 255)
+                Perimeter1 = Perimeter1 + 1;
+            if (L2.at<uchar>(i, j) == 255)
+                Perimeter2 = Perimeter2 + 1;
+        }
+    cout << "four_neighborhoods: " << Perimeter1 << "   " << "eight_neighborhoods: " << Perimeter2;
+    imshow("origin", image);
 	imshow("four_neighborhoods", L1);
 	imshow("eight_neighborhoods", L2);
 	imwrite("../../5-area-boundary-extraction-and-perimeter-calculation/output/four_neighborhoods.bmp", L1);
 	imwrite("../../5-area-boundary-extraction-and-perimeter-calculation/output/eight_neighborhoods.bmp", L2);
-	int Perimeter1 = 0;
-	int Perimeter2 = 0;
-	for (int i = 0; i < L1.rows - 1; i++)
-		for (int j = 0; j < L1.cols - 1; j++)
-		{
-			if (L1.at<uchar>(i, j) == 255)
-				Perimeter1 = Perimeter1 + 1;
-			if (L2.at<uchar>(i, j) == 255)
-				Perimeter2 = Perimeter2 + 1;
-		}
-	cout << "four_neighborhoods: " << Perimeter1 << "   " << "eight_neighborhoods: " << Perimeter2;
 	waitKey(0);
 	return 0;
 }
