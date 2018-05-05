@@ -1,6 +1,5 @@
 # Image Measuring Experiments
 
----
 
 ## Description
 
@@ -27,14 +26,12 @@ This experiment is an area measurement of one of the examples of image measureme
 
 This experiment is one of the application examples of the regional boundary extraction and perimeter calculation, using the four-neighborhood method and the eight-neighborhood method to extract the boundary of the binarized image, and calculate the perimeter of the boundary.
 
----
 
 ## Dependencies
 
 * OpenCV
 * CMake
 
----
 
 ## Others
 
