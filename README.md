@@ -1,8 +1,11 @@
 # Image Measuring Experiments
 
+---
+
 ## Description
 
 Five experiments of Image Measuring in USTC, including image smoothing,  image enhancement,  image edge detection,  image thresholding, image refinement, area measuring, area boundary extraction and perimeter calculation.
+
 
 ### Experiment 1 image smoothing & image enhancement
 
@@ -24,14 +27,18 @@ This experiment is an area measurement of one of the examples of image measureme
 
 This experiment is one of the application examples of the regional boundary extraction and perimeter calculation, using the four-neighborhood method and the eight-neighborhood method to extract the boundary of the binarized image, and calculate the perimeter of the boundary.
 
+---
+
 ## Dependencies
 
 * OpenCV
 * CMake
 
+---
+
 ## Others
 
-[[Write-up]](https://github.com/zhearing/image_measuring_experiments/raw/master/%E5%9B%BE%E5%83%8F%E6%B5%8B%E9%87%8F%E5%AE%9E%E9%AA%8C%E8%AE%B2%E4%B9%89.pdf)
+[Write-up Link](https://github.com/zhearing/image_measuring_experiments/raw/master/writeup.pdf)
 
 
 
