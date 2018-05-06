@@ -1,9 +1,9 @@
-# Image Measuring Experiments
+# Image Measurement
 
 
 ## Description
 
-Five experiments of Image Measuring in USTC, including image smoothing,  image enhancement,  image edge detection,  image thresholding, image refinement, area measuring, area boundary extraction and perimeter calculation.
+Five experiments of Image Measurement in USTC, including image smoothing,  image enhancement,  image edge detection,  image thresholding, image refinement, area measuring, area boundary extraction and perimeter calculation.
 
 
 ### Experiment 1 image smoothing & image enhancement
@@ -29,13 +29,14 @@ This experiment is one of the application examples of the regional boundary extr
 
 ## Dependencies
 
-* OpenCV
+* OpenCV(at least 2.X)
 * CMake
 
 
 ## Others
 
-[Write-up Link](https://github.com/zhearing/image_measuring_experiments/raw/master/writeup.pdf)
+[[my writeup]](https://github.com/zhearing/image_measuring_experiments/raw/master/writeup.pdf)
+[[More Materials]] [password: ie9b](https://pan.baidu.com/s/1L0dstAJD5joovn_kLelFsQ)
 
 
 
