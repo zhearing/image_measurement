@@ -35,8 +35,8 @@ This experiment is one of the application examples of the regional boundary extr
 
 ## Others
 
-[[my writeup]](https://github.com/zhearing/image_measuring_experiments/raw/master/writeup.pdf)
-[[More Materials]] [password: ie9b](https://pan.baidu.com/s/1L0dstAJD5joovn_kLelFsQ)
+[[My Write-up]](https://github.com/zhearing/image_measuring_experiments/raw/master/writeup.pdf)
+[[More Materials link | password: ie9b]](https://pan.baidu.com/s/1L0dstAJD5joovn_kLelFsQ)
 
 
 
